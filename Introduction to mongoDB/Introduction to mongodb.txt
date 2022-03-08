@@ -1,0 +1,310 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\ADMIN> mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("905f2a0b-6887-4bce-87ad-cd537218bf6c") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T14:28:08.818+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+test    0.000GB
+> use test
+switched to db test
+> show collection
+uncaught exception: Error: don't know how to show [collection] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> show Collection
+uncaught exception: Error: don't know how to show [Collection] :
+shellHelper.show@src/mongo/shell/utils.js:1211:11
+shellHelper@src/mongo/shell/utils.js:838:15
+@(shellhelp2):1:1
+> use test
+switched to db test
+> db.createCollection("user")
+{
+        "ok" : 0,
+        "errmsg" : "Collection already exists. NS: test.user",
+        "code" : 48,
+        "codeName" : "NamespaceExists"
+}
+> db.user.find({})
+{ "_id" : ObjectId("62262b7401dffb93945ebd90"), "name" : "hemant" }
+> db.insert({"Name":"Hemant","Last_Name":"Suryawanshi","Email":"abc@gmail.com","gender":"male","ip_address":1011,"age":28})
+uncaught exception: TypeError: db.insert is not a function :
+@(shell):1:1
+>
+> db.user.insert({"Name":"Hemant","Last_Name":"Suryawanshi","Email":"abc@gmail.com","gender":"male","ip_address":1011,"age":28})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Akshay","Last_Name":"Upasani","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Vishal","Last_Name":"Patil","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Tushar","Last_Name":"Kachve","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Rushikesh","Last_Name":"Dusane","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Gaurav","Last_Name":"Musale","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Uday","Last_Name":"Chaudhari","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Saurabh","Last_Name":"Patil","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Aniket","Last_Name":"Maske","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"Name":"Ganesh","Last_Name":"Patil","Email":"def@gmail.com","gender":"male","ip_address":1012,"age":24})
+WriteResult({ "nInserted" : 1 })
+> db.user.find({}).pretty()
+{ "_id" : ObjectId("62262b7401dffb93945ebd90"), "name" : "hemant" }
+{
+        "_id" : ObjectId("6227829e79a9b49ed5732212"),
+        "Name" : "Hemant",
+        "Last_Name" : "Suryawanshi",
+        "Email" : "abc@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1011,
+        "age" : 28
+}
+{
+        "_id" : ObjectId("622782e979a9b49ed5732213"),
+        "Name" : "Akshay",
+        "Last_Name" : "Upasani",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227830d79a9b49ed5732214"),
+        "Name" : "Vishal",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227832679a9b49ed5732215"),
+        "Name" : "Tushar",
+        "Last_Name" : "Kachve",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227834479a9b49ed5732216"),
+        "Name" : "Rushikesh",
+        "Last_Name" : "Dusane",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227835f79a9b49ed5732217"),
+        "Name" : "Gaurav",
+        "Last_Name" : "Musale",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227837779a9b49ed5732218"),
+        "Name" : "Uday",
+        "Last_Name" : "Chaudhari",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783a879a9b49ed5732219"),
+        "Name" : "Saurabh",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783bd79a9b49ed573221a"),
+        "Name" : "Aniket",
+        "Last_Name" : "Maske",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783d079a9b49ed573221b"),
+        "Name" : "Ganesh",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+> db.user.find({name:"Hemant"})
+> db.user.find({"Name":"Hemant"})
+{ "_id" : ObjectId("6227829e79a9b49ed5732212"), "Name" : "Hemant", "Last_Name" : "Suryawanshi", "Email" : "abc@gmail.com", "gender" : "male", "ip_address" : 1011, "age" : 28 }
+> db.user.find({"Name":"Hemant"}).pretty
+function() {
+    this._prettyShell = true;
+    return this;
+}
+> db.user.find({"Name":"Hemant"}).pretty()
+{
+        "_id" : ObjectId("6227829e79a9b49ed5732212"),
+        "Name" : "Hemant",
+        "Last_Name" : "Suryawanshi",
+        "Email" : "abc@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1011,
+        "age" : 28
+}
+> db.user.find({"age":24}).pretty()
+{
+        "_id" : ObjectId("622782e979a9b49ed5732213"),
+        "Name" : "Akshay",
+        "Last_Name" : "Upasani",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227830d79a9b49ed5732214"),
+        "Name" : "Vishal",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227832679a9b49ed5732215"),
+        "Name" : "Tushar",
+        "Last_Name" : "Kachve",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227834479a9b49ed5732216"),
+        "Name" : "Rushikesh",
+        "Last_Name" : "Dusane",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227835f79a9b49ed5732217"),
+        "Name" : "Gaurav",
+        "Last_Name" : "Musale",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("6227837779a9b49ed5732218"),
+        "Name" : "Uday",
+        "Last_Name" : "Chaudhari",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783a879a9b49ed5732219"),
+        "Name" : "Saurabh",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783bd79a9b49ed573221a"),
+        "Name" : "Aniket",
+        "Last_Name" : "Maske",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+{
+        "_id" : ObjectId("622783d079a9b49ed573221b"),
+        "Name" : "Ganesh",
+        "Last_Name" : "Patil",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+> db.user.findone({"age":24}).pretty()
+uncaught exception: TypeError: db.user.findone is not a function :
+@(shell):1:1
+> db.user.findOne({"age":24}).pretty()
+uncaught exception: TypeError: db.user.findOne(...).pretty is not a function :
+@(shell):1:1
+> db.user.findOne({"age":24})
+{
+        "_id" : ObjectId("622782e979a9b49ed5732213"),
+        "Name" : "Akshay",
+        "Last_Name" : "Upasani",
+        "Email" : "def@gmail.com",
+        "gender" : "male",
+        "ip_address" : 1012,
+        "age" : 24
+}
+> db.user.update({"Name":"Hemant"},{$set:{"Location":"Pune"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.user.find({"Name":"Hemant"})
+{ "_id" : ObjectId("6227829e79a9b49ed5732212"), "Name" : "Hemant", "Last_Name" : "Suryawanshi", "Email" : "abc@gmail.com", "gender" : "male", "ip_address" : 1011, "age" : 28, "Location" : "Pune" }
+> db.user.remove({"Name":"Ganesh"})
+WriteResult({ "nRemoved" : 1 })
+> db.user.find({})
+{ "_id" : ObjectId("62262b7401dffb93945ebd90"), "name" : "hemant" }
+{ "_id" : ObjectId("6227829e79a9b49ed5732212"), "Name" : "Hemant", "Last_Name" : "Suryawanshi", "Email" : "abc@gmail.com", "gender" : "male", "ip_address" : 1011, "age" : 28, "Location" : "Pune" }
+{ "_id" : ObjectId("622782e979a9b49ed5732213"), "Name" : "Akshay", "Last_Name" : "Upasani", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("6227830d79a9b49ed5732214"), "Name" : "Vishal", "Last_Name" : "Patil", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("6227832679a9b49ed5732215"), "Name" : "Tushar", "Last_Name" : "Kachve", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("6227834479a9b49ed5732216"), "Name" : "Rushikesh", "Last_Name" : "Dusane", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("6227835f79a9b49ed5732217"), "Name" : "Gaurav", "Last_Name" : "Musale", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("6227837779a9b49ed5732218"), "Name" : "Uday", "Last_Name" : "Chaudhari", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("622783a879a9b49ed5732219"), "Name" : "Saurabh", "Last_Name" : "Patil", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+{ "_id" : ObjectId("622783bd79a9b49ed573221a"), "Name" : "Aniket", "Last_Name" : "Maske", "Email" : "def@gmail.com", "gender" : "male", "ip_address" : 1012, "age" : 24 }
+>
