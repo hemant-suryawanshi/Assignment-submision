@@ -1,0 +1,684 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\ADMIN> mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("7bf777d7-e121-46b1-a5d5-242e775c50af") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T14:28:08.818+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> show dbs
+admin          0.000GB
+config         0.000GB
+local          0.000GB
+mongoadvanced  0.000GB
+test           0.000GB
+> use mongoadvanced
+switched to db mongoadvanced
+> db.user.find({})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516b"), "id" : 1, "movie_name" : "Zorba the Greek (Alexis Zorbas)", "movie_genre" : "Adventure|Drama", "production_year" : 1992, "budget" : 14158 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516c"), "id" : 2, "movie_name" : "Wrong Turn at Tahoe", "movie_genre" : "Action|Crime|Thriller", "production_year" : 1990, "budget" : 9515 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516d"), "id" : 3, "movie_name" : "Daisies (Sedmikrasky)", "movie_genre" : "Comedy|Drama", "production_year" : 2016, "budget" : 17084 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516e"), "id" : 4, "movie_name" : "Hellraiser: Hellworld", "movie_genre" : "Horror", "production_year" : 2008, "budget" : 11634 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516f"), "id" : 5, "movie_name" : "Crimes of the Future", "movie_genre" : "Comedy|Sci-Fi", "production_year" : 1994, "budget" : 9654 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475170"), "id" : 6, "movie_name" : "Two for the Money", "movie_genre" : "Drama", "production_year" : 2012, "budget" : 18853 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475171"), "id" : 7, "movie_name" : "Divo, Il", "movie_genre" : "Drama", "production_year" : 2016, "budget" : 14654 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475172"), "id" : 8, "movie_name" : "Tales from the Script", "movie_genre" : "Documentary", "production_year" : 2013, "budget" : 17130 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475173"), "id" : 9, "movie_name" : "L'enfance nue (Naked Childhood)", "movie_genre" : "Drama", "production_year" : 1995, "budget" : 11604 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475174"), "id" : 10, "movie_name" : "Defense of the Realm", "movie_genre" : "Thriller", "production_year" : 2015, "budget" : 13712 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475175"), "id" : 11, "movie_name" : "Alpha Dog", "movie_genre" : "Crime|Drama", "production_year" : 2003, "budget" : 11992 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475176"), "id" : 12, "movie_name" : "Chamber of Death (Chambre des morts, La)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2013, "budget" : 19489 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475177"), "id" : 13, "movie_name" : "Peeping Tom", "movie_genre" : "Drama|Horror|Thriller", "production_year" : 1998, "budget" : 17384 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475178"), "id" : 14, "movie_name" : "Kind Hearts and Coronets", "movie_genre" : "Comedy|Drama", "production_year" : 1994, "budget" : 19236 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475179"), "id" : 15, "movie_name" : "Hijack That Went South, The (Kaappari)", "movie_genre" : "Action|Comedy|Crime", "production_year" : 1991, "budget" : 15213 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517a"), "id" : 16, "movie_name" : "Chopper Chicks in Zombietown", "movie_genre" : "Comedy|Horror", "production_year" : 2004, "budget" : 15806 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517b"), "id" : 17, "movie_name" : "Bambou", "movie_genre" : "Comedy", "production_year" : 1995, "budget" : 19381 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517c"), "id" : 18, "movie_name" : "The Sea Chase", "movie_genre" : "Action|Drama|War", "production_year" : 1993, "budget" : 16504 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517d"), "id" : 19, "movie_name" : "Merantau", "movie_genre" : "Action|Drama", "production_year" : 2004, "budget" : 11284 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517e"), "id" : 20, "movie_name" : "Interpreter, The", "movie_genre" : "Drama|Thriller", "production_year" : 1997, "budget" : 19245 }
+Type "it" for more
+> db.user.find({budget:{$gte:16504}}).pretty()
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516d"),
+        "id" : 3,
+        "movie_name" : "Daisies (Sedmikrasky)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2016,
+        "budget" : 17084
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475170"),
+        "id" : 6,
+        "movie_name" : "Two for the Money",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : 18853
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475172"),
+        "id" : 8,
+        "movie_name" : "Tales from the Script",
+        "movie_genre" : "Documentary",
+        "production_year" : 2013,
+        "budget" : 17130
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475176"),
+        "id" : 12,
+        "movie_name" : "Chamber of Death (Chambre des morts, La)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2013,
+        "budget" : 19489
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475177"),
+        "id" : 13,
+        "movie_name" : "Peeping Tom",
+        "movie_genre" : "Drama|Horror|Thriller",
+        "production_year" : 1998,
+        "budget" : 17384
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475178"),
+        "id" : 14,
+        "movie_name" : "Kind Hearts and Coronets",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1994,
+        "budget" : 19236
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517b"),
+        "id" : 17,
+        "movie_name" : "Bambou",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 19381
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517c"),
+        "id" : 18,
+        "movie_name" : "The Sea Chase",
+        "movie_genre" : "Action|Drama|War",
+        "production_year" : 1993,
+        "budget" : 16504
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517e"),
+        "id" : 20,
+        "movie_name" : "Interpreter, The",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1997,
+        "budget" : 19245
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517f"),
+        "id" : 21,
+        "movie_name" : "Panda! Go Panda! Rainy Day Circus",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2020,
+        "budget" : 18817
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475180"),
+        "id" : 22,
+        "movie_name" : "Glasses (Megane)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1996,
+        "budget" : 18110
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475183"),
+        "id" : 25,
+        "movie_name" : "Son of Kong, The",
+        "movie_genre" : "Adventure|Comedy|Fantasy",
+        "production_year" : 2008,
+        "budget" : 16757
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475186"),
+        "id" : 28,
+        "movie_name" : "Crossroads",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : 16644
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475187"),
+        "id" : 29,
+        "movie_name" : "Saawariya",
+        "movie_genre" : "Drama|Musical|Romance",
+        "production_year" : 2011,
+        "budget" : 17683
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47518d"),
+        "id" : 35,
+        "movie_name" : "Yonkers Joe",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "budget" : 18041
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47518f"),
+        "id" : 37,
+        "movie_name" : "Zotz!",
+        "movie_genre" : "Comedy|Fantasy|Horror",
+        "production_year" : 1995,
+        "budget" : 18541
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475191"),
+        "id" : 39,
+        "movie_name" : "Ballad of Nessie, The",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 1997,
+        "budget" : 18892
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475199"),
+        "id" : 47,
+        "movie_name" : "Love and Sex under Nazi Occupation (Amour et sexe sous l'occupation) ",
+        "movie_genre" : "Documentary",
+        "production_year" : 2017,
+        "budget" : 16798
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47519b"),
+        "id" : 49,
+        "movie_name" : "Killer at Large",
+        "movie_genre" : "Documentary",
+        "production_year" : 1994,
+        "budget" : 16865
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47519f"),
+        "id" : 53,
+        "movie_name" : "Hustler White",
+        "movie_genre" : "Romance",
+        "production_year" : 2009,
+        "budget" : 19417
+}
+Type "it" for more
+> db.user.find({budget:{$lte:16504}}).pretty()
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516b"),
+        "id" : 1,
+        "movie_name" : "Zorba the Greek (Alexis Zorbas)",
+        "movie_genre" : "Adventure|Drama",
+        "production_year" : 1992,
+        "budget" : 14158
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516c"),
+        "id" : 2,
+        "movie_name" : "Wrong Turn at Tahoe",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1990,
+        "budget" : 9515
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516e"),
+        "id" : 4,
+        "movie_name" : "Hellraiser: Hellworld",
+        "movie_genre" : "Horror",
+        "production_year" : 2008,
+        "budget" : 11634
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516f"),
+        "id" : 5,
+        "movie_name" : "Crimes of the Future",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "production_year" : 1994,
+        "budget" : 9654
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475171"),
+        "id" : 7,
+        "movie_name" : "Divo, Il",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 14654
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475173"),
+        "id" : 9,
+        "movie_name" : "L'enfance nue (Naked Childhood)",
+        "movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : 11604
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475174"),
+        "id" : 10,
+        "movie_name" : "Defense of the Realm",
+        "movie_genre" : "Thriller",
+        "production_year" : 2015,
+        "budget" : 13712
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475175"),
+        "id" : 11,
+        "movie_name" : "Alpha Dog",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2003,
+        "budget" : 11992
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475179"),
+        "id" : 15,
+        "movie_name" : "Hijack That Went South, The (Kaappari)",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 1991,
+        "budget" : 15213
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517a"),
+        "id" : 16,
+        "movie_name" : "Chopper Chicks in Zombietown",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 2004,
+        "budget" : 15806
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517c"),
+        "id" : 18,
+        "movie_name" : "The Sea Chase",
+        "movie_genre" : "Action|Drama|War",
+        "production_year" : 1993,
+        "budget" : 16504
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517d"),
+        "id" : 19,
+        "movie_name" : "Merantau",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2004,
+        "budget" : 11284
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475181"),
+        "id" : 23,
+        "movie_name" : "Clean",
+        "movie_genre" : "Drama",
+        "production_year" : 2014,
+        "budget" : 13036
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475182"),
+        "id" : 24,
+        "movie_name" : "Snow Dogs",
+        "movie_genre" : "Adventure|Children|Comedy",
+        "production_year" : 1999,
+        "budget" : 9588
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475184"),
+        "id" : 26,
+        "movie_name" : "Petulia",
+        "movie_genre" : "Drama",
+        "production_year" : 2019,
+        "budget" : 14092
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475185"),
+        "id" : 27,
+        "movie_name" : "Carnal Knowledge",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2011,
+        "budget" : 13000
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475188"),
+        "id" : 30,
+        "movie_name" : "Tony Takitani",
+        "movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : 16091
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475189"),
+        "id" : 31,
+        "movie_name" : "Coldblooded",
+        "movie_genre" : "Comedy",
+        "production_year" : 2003,
+        "budget" : 12635
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47518a"),
+        "id" : 32,
+        "movie_name" : "Prince of Tides, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 15755
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47518b"),
+        "id" : 33,
+        "movie_name" : "Clouds of Sils Maria",
+        "movie_genre" : "Drama",
+        "production_year" : 2019,
+        "budget" : 14513
+}
+Type "it" for more
+> db.user.find({$and:[{"budget":{$gte:10000}},{"production_year":{$gte:2000}}]})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516d"), "id" : 3, "movie_name" : "Daisies (Sedmikrasky)", "movie_genre" : "Comedy|Drama", "production_year" : 2016, "budget" : 17084 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516e"), "id" : 4, "movie_name" : "Hellraiser: Hellworld", "movie_genre" : "Horror", "production_year" : 2008, "budget" : 11634 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475170"), "id" : 6, "movie_name" : "Two for the Money", "movie_genre" : "Drama", "production_year" : 2012, "budget" : 18853 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475171"), "id" : 7, "movie_name" : "Divo, Il", "movie_genre" : "Drama", "production_year" : 2016, "budget" : 14654 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475172"), "id" : 8, "movie_name" : "Tales from the Script", "movie_genre" : "Documentary", "production_year" : 2013, "budget" : 17130 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475174"), "id" : 10, "movie_name" : "Defense of the Realm", "movie_genre" : "Thriller", "production_year" : 2015, "budget" : 13712 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475175"), "id" : 11, "movie_name" : "Alpha Dog", "movie_genre" : "Crime|Drama", "production_year" : 2003, "budget" : 11992 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475176"), "id" : 12, "movie_name" : "Chamber of Death (Chambre des morts, La)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2013, "budget" : 19489 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517a"), "id" : 16, "movie_name" : "Chopper Chicks in Zombietown", "movie_genre" : "Comedy|Horror", "production_year" : 2004, "budget" : 15806 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517d"), "id" : 19, "movie_name" : "Merantau", "movie_genre" : "Action|Drama", "production_year" : 2004, "budget" : 11284 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517f"), "id" : 21, "movie_name" : "Panda! Go Panda! Rainy Day Circus", "movie_genre" : "Animation|Children", "production_year" : 2020, "budget" : 18817 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475181"), "id" : 23, "movie_name" : "Clean", "movie_genre" : "Drama", "production_year" : 2014, "budget" : 13036 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475183"), "id" : 25, "movie_name" : "Son of Kong, The", "movie_genre" : "Adventure|Comedy|Fantasy", "production_year" : 2008, "budget" : 16757 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475184"), "id" : 26, "movie_name" : "Petulia", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 14092 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475185"), "id" : 27, "movie_name" : "Carnal Knowledge", "movie_genre" : "Comedy|Drama", "production_year" : 2011, "budget" : 13000 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475186"), "id" : 28, "movie_name" : "Crossroads", "movie_genre" : "Drama", "production_year" : 2013, "budget" : 16644 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475187"), "id" : 29, "movie_name" : "Saawariya", "movie_genre" : "Drama|Musical|Romance", "production_year" : 2011, "budget" : 17683 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475188"), "id" : 30, "movie_name" : "Tony Takitani", "movie_genre" : "Drama", "production_year" : 2001, "budget" : 16091 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475189"), "id" : 31, "movie_name" : "Coldblooded", "movie_genre" : "Comedy", "production_year" : 2003, "budget" : 12635 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47518b"), "id" : 33, "movie_name" : "Clouds of Sils Maria", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 14513 }
+Type "it" for more
+> d.user.find({"movie_name":{$ne:"Alpha Dog"}}).pretty()
+uncaught exception: ReferenceError: d is not defined :
+@(shell):1:1
+> db.user.find({"movie_name":{$ne:"Alpha Dog"}}).pretty()
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516b"),
+        "id" : 1,
+        "movie_name" : "Zorba the Greek (Alexis Zorbas)",
+        "movie_genre" : "Adventure|Drama",
+        "production_year" : 1992,
+        "budget" : 14158
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516c"),
+        "id" : 2,
+        "movie_name" : "Wrong Turn at Tahoe",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 1990,
+        "budget" : 9515
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516d"),
+        "id" : 3,
+        "movie_name" : "Daisies (Sedmikrasky)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2016,
+        "budget" : 17084
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516e"),
+        "id" : 4,
+        "movie_name" : "Hellraiser: Hellworld",
+        "movie_genre" : "Horror",
+        "production_year" : 2008,
+        "budget" : 11634
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47516f"),
+        "id" : 5,
+        "movie_name" : "Crimes of the Future",
+        "movie_genre" : "Comedy|Sci-Fi",
+        "production_year" : 1994,
+        "budget" : 9654
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475170"),
+        "id" : 6,
+        "movie_name" : "Two for the Money",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : 18853
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475171"),
+        "id" : 7,
+        "movie_name" : "Divo, Il",
+        "movie_genre" : "Drama",
+        "production_year" : 2016,
+        "budget" : 14654
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475172"),
+        "id" : 8,
+        "movie_name" : "Tales from the Script",
+        "movie_genre" : "Documentary",
+        "production_year" : 2013,
+        "budget" : 17130
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475173"),
+        "id" : 9,
+        "movie_name" : "L'enfance nue (Naked Childhood)",
+        "movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : 11604
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475174"),
+        "id" : 10,
+        "movie_name" : "Defense of the Realm",
+        "movie_genre" : "Thriller",
+        "production_year" : 2015,
+        "budget" : 13712
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475176"),
+        "id" : 12,
+        "movie_name" : "Chamber of Death (Chambre des morts, La)",
+        "movie_genre" : "Crime|Mystery|Thriller",
+        "production_year" : 2013,
+        "budget" : 19489
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475177"),
+        "id" : 13,
+        "movie_name" : "Peeping Tom",
+        "movie_genre" : "Drama|Horror|Thriller",
+        "production_year" : 1998,
+        "budget" : 17384
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475178"),
+        "id" : 14,
+        "movie_name" : "Kind Hearts and Coronets",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1994,
+        "budget" : 19236
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd475179"),
+        "id" : 15,
+        "movie_name" : "Hijack That Went South, The (Kaappari)",
+        "movie_genre" : "Action|Comedy|Crime",
+        "production_year" : 1991,
+        "budget" : 15213
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517a"),
+        "id" : 16,
+        "movie_name" : "Chopper Chicks in Zombietown",
+        "movie_genre" : "Comedy|Horror",
+        "production_year" : 2004,
+        "budget" : 15806
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517b"),
+        "id" : 17,
+        "movie_name" : "Bambou",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 19381
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517c"),
+        "id" : 18,
+        "movie_name" : "The Sea Chase",
+        "movie_genre" : "Action|Drama|War",
+        "production_year" : 1993,
+        "budget" : 16504
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517d"),
+        "id" : 19,
+        "movie_name" : "Merantau",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2004,
+        "budget" : 11284
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517e"),
+        "id" : 20,
+        "movie_name" : "Interpreter, The",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 1997,
+        "budget" : 19245
+}
+{
+        "_id" : ObjectId("6228d74a33ce5e2ffd47517f"),
+        "id" : 21,
+        "movie_name" : "Panda! Go Panda! Rainy Day Circus",
+        "movie_genre" : "Animation|Children",
+        "production_year" : 2020,
+        "budget" : 18817
+}
+Type "it" for more
+> db.user.find({$or:[{"budget":{$gte:10000}},{"production_year":{$gte:2000}}]})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516b"), "id" : 1, "movie_name" : "Zorba the Greek (Alexis Zorbas)", "movie_genre" : "Adventure|Drama", "production_year" : 1992, "budget" : 14158 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516d"), "id" : 3, "movie_name" : "Daisies (Sedmikrasky)", "movie_genre" : "Comedy|Drama", "production_year" : 2016, "budget" : 17084 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516e"), "id" : 4, "movie_name" : "Hellraiser: Hellworld", "movie_genre" : "Horror", "production_year" : 2008, "budget" : 11634 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475170"), "id" : 6, "movie_name" : "Two for the Money", "movie_genre" : "Drama", "production_year" : 2012, "budget" : 18853 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475171"), "id" : 7, "movie_name" : "Divo, Il", "movie_genre" : "Drama", "production_year" : 2016, "budget" : 14654 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475172"), "id" : 8, "movie_name" : "Tales from the Script", "movie_genre" : "Documentary", "production_year" : 2013, "budget" : 17130 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475173"), "id" : 9, "movie_name" : "L'enfance nue (Naked Childhood)", "movie_genre" : "Drama", "production_year" : 1995, "budget" : 11604 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475174"), "id" : 10, "movie_name" : "Defense of the Realm", "movie_genre" : "Thriller", "production_year" : 2015, "budget" : 13712 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475175"), "id" : 11, "movie_name" : "Alpha Dog", "movie_genre" : "Crime|Drama", "production_year" : 2003, "budget" : 11992 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475176"), "id" : 12, "movie_name" : "Chamber of Death (Chambre des morts, La)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2013, "budget" : 19489 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475177"), "id" : 13, "movie_name" : "Peeping Tom", "movie_genre" : "Drama|Horror|Thriller", "production_year" : 1998, "budget" : 17384 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475178"), "id" : 14, "movie_name" : "Kind Hearts and Coronets", "movie_genre" : "Comedy|Drama", "production_year" : 1994, "budget" : 19236 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475179"), "id" : 15, "movie_name" : "Hijack That Went South, The (Kaappari)", "movie_genre" : "Action|Comedy|Crime", "production_year" : 1991, "budget" : 15213 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517a"), "id" : 16, "movie_name" : "Chopper Chicks in Zombietown", "movie_genre" : "Comedy|Horror", "production_year" : 2004, "budget" : 15806 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517b"), "id" : 17, "movie_name" : "Bambou", "movie_genre" : "Comedy", "production_year" : 1995, "budget" : 19381 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517c"), "id" : 18, "movie_name" : "The Sea Chase", "movie_genre" : "Action|Drama|War", "production_year" : 1993, "budget" : 16504 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517d"), "id" : 19, "movie_name" : "Merantau", "movie_genre" : "Action|Drama", "production_year" : 2004, "budget" : 11284 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517e"), "id" : 20, "movie_name" : "Interpreter, The", "movie_genre" : "Drama|Thriller", "production_year" : 1997, "budget" : 19245 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517f"), "id" : 21, "movie_name" : "Panda! Go Panda! Rainy Day Circus", "movie_genre" : "Animation|Children", "production_year" : 2020, "budget" : 18817 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475180"), "id" : 22, "movie_name" : "Glasses (Megane)", "movie_genre" : "Comedy|Drama", "production_year" : 1996, "budget" : 18110 }
+Type "it" for more
+> db.user.find({$nor:[{"budget":{$gte:10000}},{"production_year":{$gte:2000}}]})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516c"), "id" : 2, "movie_name" : "Wrong Turn at Tahoe", "movie_genre" : "Action|Crime|Thriller", "production_year" : 1990, "budget" : 9515 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47516f"), "id" : 5, "movie_name" : "Crimes of the Future", "movie_genre" : "Comedy|Sci-Fi", "production_year" : 1994, "budget" : 9654 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475182"), "id" : 24, "movie_name" : "Snow Dogs", "movie_genre" : "Adventure|Children|Comedy", "production_year" : 1999, "budget" : 9588 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751a7"), "id" : 61, "movie_name" : "The Land Before Time VIII: The Big Freeze", "movie_genre" : "Adventure|Animation|Children", "production_year" : 1998, "budget" : 9212 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751c2"), "id" : 88, "movie_name" : "Catch That Kid", "movie_genre" : "Action|Adventure|Children|Comedy|Crime", "production_year" : 1998, "budget" : 9803 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751d4"), "id" : 106, "movie_name" : "The Haunted House", "movie_genre" : "Comedy", "production_year" : 1999, "budget" : 9600 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751dd"), "id" : 115, "movie_name" : "Jesus of Nazareth", "movie_genre" : "Drama", "production_year" : 1991, "budget" : 9031 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47521d"), "id" : 179, "movie_name" : "One from the Heart", "movie_genre" : "Drama|Romance", "production_year" : 1991, "budget" : 9106 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47523b"), "id" : 209, "movie_name" : "Slaying the Badger", "movie_genre" : "Documentary", "production_year" : 1995, "budget" : 9839 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47526e"), "id" : 260, "movie_name" : "Ricky Gervais Live 2: Politics", "movie_genre" : "Comedy", "production_year" : 1992, "budget" : 9081 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4752ae"), "id" : 324, "movie_name" : "Hugo", "movie_genre" : "Children|Drama|Mystery", "production_year" : 1997, "budget" : 9567 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475321"), "id" : 439, "movie_name" : "Angus", "movie_genre" : "Comedy", "production_year" : 1999, "budget" : 9407 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47535a"), "id" : 496, "movie_name" : "Last Drop, The", "movie_genre" : "Action|Adventure|Crime|War", "production_year" : 1996, "budget" : 9848 }
+> db.user.find({$not:[{"budget":{$gte:10000}},{"production_year":{$gte:2000}}]})
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.user.find({"production_year":{$in:[2000,2010]}})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47519d"), "id" : 51, "movie_name" : "The Secret of Convict Lake", "movie_genre" : "Western", "production_year" : 2010, "budget" : 16366 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751a4"), "id" : 58, "movie_name" : "When Harry Met Sally...", "movie_genre" : "Comedy|Romance", "production_year" : 2010, "budget" : 15549 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751aa"), "id" : 64, "movie_name" : "Cruel Story of Youth (Seishun zankoku monogatari)", "movie_genre" : "Drama", "production_year" : 2010, "budget" : 15601 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751ac"), "id" : 66, "movie_name" : "Jenny", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 13968 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751b2"), "id" : 72, "movie_name" : "Moloch (Molokh)", "movie_genre" : "Drama", "production_year" : 2010, "budget" : 18080 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751b3"), "id" : 73, "movie_name" : "Misérables, Les", "movie_genre" : "Drama", "production_year" : 2010, "budget" : 19735 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751ba"), "id" : 80, "movie_name" : "Gods and Monsters", "movie_genre" : "Drama", "production_year" : 2000, "budget" : 18935 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751c5"), "id" : 91, "movie_name" : "Main Hoon Na", "movie_genre" : "Action|Comedy|Drama", "production_year" : 2010, "budget" : 19754 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751c8"), "id" : 94, "movie_name" : "Perfect Couple, A", "movie_genre" : "Comedy|Romance", "production_year" : 2000, "budget" : 19300 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751cb"), "id" : 97, "movie_name" : "The Girl in a Swing", "movie_genre" : "Drama|Romance", "production_year" : 2010, "budget" : 10960 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751db"), "id" : 113, "movie_name" : "Cookie's Fortune", "movie_genre" : "Comedy|Drama", "production_year" : 2010, "budget" : 14820 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751ef"), "id" : 133, "movie_name" : "Billy Elliot", "movie_genre" : "Drama", "production_year" : 2010, "budget" : 19613 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751f8"), "id" : 142, "movie_name" : "Remember the Night", "movie_genre" : "Comedy|Drama|Romance", "production_year" : 2010, "budget" : 15250 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475216"), "id" : 172, "movie_name" : "Dopamine", "movie_genre" : "Comedy|Drama|Romance", "production_year" : 2010, "budget" : 13346 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47521e"), "id" : 180, "movie_name" : "Farewell (L'affaire Farewell)", "movie_genre" : "Thriller", "production_year" : 2010, "budget" : 19310 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475220"), "id" : 182, "movie_name" : "Running from Crazy", "movie_genre" : "Documentary", "production_year" : 2000, "budget" : 13593 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47522e"), "id" : 196, "movie_name" : "Man Vanishes, A (Ningen Johatsu)", "movie_genre" : "Documentary|Drama|Mystery", "production_year" : 2010, "budget" : 13286 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475260"), "id" : 246, "movie_name" : "Bart Got a Room", "movie_genre" : "Comedy|Romance", "production_year" : 2000, "budget" : 19143 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475272"), "id" : 264, "movie_name" : "Rocket Singh: Salesman of the Year", "movie_genre" : "Comedy|Drama", "production_year" : 2000, "budget" : 10794 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475273"), "id" : 265, "movie_name" : "Pyromaniac's Love Story, A", "movie_genre" : "Comedy|Romance", "production_year" : 2010, "budget" : 18040 }
+Type "it" for more
+> db.user.sort({"production_year":-1},{"movie_name":1})
+uncaught exception: TypeError: db.user.sort is not a function :
+@(shell):1:1
+> db.user.find({}).sort({"production_year":-1},{"movie_name":1})
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517f"), "id" : 21, "movie_name" : "Panda! Go Panda! Rainy Day Circus", "movie_genre" : "Animation|Children", "production_year" : 2020, "budget" : 18817 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475196"), "id" : 44, "movie_name" : "Abraham's Valley (Vale Abraão)", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 9703 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751b1"), "id" : 71, "movie_name" : "And the Band Played On", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 13275 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751b4"), "id" : 74, "movie_name" : "Big Girls Don't Cry (Große Mädchen weinen nicht)", "movie_genre" : "Drama|Romance", "production_year" : 2020, "budget" : 15722 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751f6"), "id" : 140, "movie_name" : "Sirens", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 14583 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475209"), "id" : 159, "movie_name" : "Virunga", "movie_genre" : "Documentary|War", "production_year" : 2020, "budget" : 19351 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475246"), "id" : 220, "movie_name" : "Maze, The", "movie_genre" : "Horror|Sci-Fi", "production_year" : 2020, "budget" : 19084 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475258"), "id" : 238, "movie_name" : "Queen to Play (Joueuse)", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 19935 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47528f"), "id" : 293, "movie_name" : "Saboteur", "movie_genre" : "Mystery|Thriller", "production_year" : 2020, "budget" : 15839 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4752ab"), "id" : 321, "movie_name" : "Life On A String (Bian chang Bian Zou)", "movie_genre" : "Adventure|Drama|Fantasy|Musical", "production_year" : 2020, "budget" : 17579 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4752ba"), "id" : 336, "movie_name" : "Only God Forgives", "movie_genre" : "Drama|Thriller", "production_year" : 2020, "budget" : 15162 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475314"), "id" : 426, "movie_name" : "Promised Land", "movie_genre" : "Drama", "production_year" : 2020, "budget" : 10341 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475347"), "id" : 477, "movie_name" : "The Concert for Bangladesh", "movie_genre" : "Documentary", "production_year" : 2020, "budget" : 19217 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47535c"), "id" : 498, "movie_name" : "Daleks' Invasion Earth: 2150 A.D.", "movie_genre" : "Adventure|Sci-Fi", "production_year" : 2020, "budget" : 10400 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475184"), "id" : 26, "movie_name" : "Petulia", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 14092 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47518b"), "id" : 33, "movie_name" : "Clouds of Sils Maria", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 14513 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751a2"), "id" : 56, "movie_name" : "Fuzz", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 9969 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751d0"), "id" : 102, "movie_name" : "Life of a King", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 18366 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751d1"), "id" : 103, "movie_name" : "Foul King, The (Banchikwang)", "movie_genre" : "Comedy", "production_year" : 2019, "budget" : 15377 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd4751df"), "id" : 117, "movie_name" : "AmericanEast", "movie_genre" : "Drama", "production_year" : 2019, "budget" : 12606 }
+Type "it" for more
+> d.user.find({}).skip(10).limit(10)
+uncaught exception: ReferenceError: d is not defined :
+@(shell):1:1
+> db.user.find({}).skip(10).limit(10)
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475175"), "id" : 11, "movie_name" : "Alpha Dog", "movie_genre" : "Crime|Drama", "production_year" : 2003, "budget" : 11992 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475176"), "id" : 12, "movie_name" : "Chamber of Death (Chambre des morts, La)", "movie_genre" : "Crime|Mystery|Thriller", "production_year" : 2013, "budget" : 19489 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475177"), "id" : 13, "movie_name" : "Peeping Tom", "movie_genre" : "Drama|Horror|Thriller", "production_year" : 1998, "budget" : 17384 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475178"), "id" : 14, "movie_name" : "Kind Hearts and Coronets", "movie_genre" : "Comedy|Drama", "production_year" : 1994, "budget" : 19236 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd475179"), "id" : 15, "movie_name" : "Hijack That Went South, The (Kaappari)", "movie_genre" : "Action|Comedy|Crime", "production_year" : 1991, "budget" : 15213 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517a"), "id" : 16, "movie_name" : "Chopper Chicks in Zombietown", "movie_genre" : "Comedy|Horror", "production_year" : 2004, "budget" : 15806 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517b"), "id" : 17, "movie_name" : "Bambou", "movie_genre" : "Comedy", "production_year" : 1995, "budget" : 19381 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517c"), "id" : 18, "movie_name" : "The Sea Chase", "movie_genre" : "Action|Drama|War", "production_year" : 1993, "budget" : 16504 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517d"), "id" : 19, "movie_name" : "Merantau", "movie_genre" : "Action|Drama", "production_year" : 2004, "budget" : 11284 }
+{ "_id" : ObjectId("6228d74a33ce5e2ffd47517e"), "id" : 20, "movie_name" : "Interpreter, The", "movie_genre" : "Drama|Thriller", "production_year" : 1997, "budget" : 19245 }
+> db.user.find({}).skip(10).limit(10).update({$unset:{movie_gener":""}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:63
+> db.user.update({$unset:{movie_gener":""}}).limit(10)
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:35
+>
