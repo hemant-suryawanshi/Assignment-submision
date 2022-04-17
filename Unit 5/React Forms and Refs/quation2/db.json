@@ -1,0 +1,166 @@
+{
+  "user": [
+    {
+      "username": "Vishal",
+      "age": "23",
+      "adress": "Bangluru",
+      "salery": "5000",
+      "department": "Operations",
+      "maried": false,
+      "id": 1
+    },
+    {
+      "username": "Akshay",
+      "age": "23",
+      "adress": "Bangluru",
+      "salery": "5000",
+      "department": "Operations",
+      "maried": false,
+      "id": 2
+    },
+    {
+      "username": "Hemant",
+      "age": "23",
+      "adress": "Bangluru",
+      "salery": "5000",
+      "department": "Operations",
+      "maried": false,
+      "id": 3
+    },
+    {
+      "username": "hemant",
+      "age": "35",
+      "adress": "pappu",
+      "salery": "8347833",
+      "department": "Operations",
+      "maried": false,
+      "id": 4
+    },
+    {
+      "username": "",
+      "age": "",
+      "adress": "",
+      "salery": "",
+      "department": "",
+      "maried": false,
+      "id": 5
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalanet",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 6
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalanet",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 7
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 8
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 9
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 10
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 11
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 12
+    },
+    {
+      "username": "Hemant",
+      "age": "73",
+      "adress": "amalaner",
+      "salery": "73894712386",
+      "department": "Developement",
+      "maried": "false",
+      "id": 13
+    },
+    {
+      "username": "",
+      "age": "",
+      "adress": "",
+      "salery": "",
+      "department": "",
+      "maried": false,
+      "id": 14
+    },
+    {
+      "username": "hemant",
+      "age": "27",
+      "adress": "Amalaner",
+      "salery": "100000",
+      "department": "Markating",
+      "maried": "false",
+      "id": 15
+    },
+    {
+      "username": "hemant",
+      "age": "29",
+      "adress": "Amalaner",
+      "salery": "100000",
+      "department": "Markating",
+      "maried": "false",
+      "id": 16
+    },
+    {
+      "username": "",
+      "age": "",
+      "adress": "",
+      "salery": "",
+      "department": "",
+      "maried": false,
+      "id": 17
+    },
+    {
+      "username": "",
+      "age": "",
+      "adress": "",
+      "salery": "",
+      "department": "",
+      "maried": false,
+      "id": 18
+    }
+  ]
+}
