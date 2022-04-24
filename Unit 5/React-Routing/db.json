@@ -1,0 +1,213 @@
+{
+  "product": [
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/AsSeenin-2copy_720x.png?v=1634793915",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/TheLaurenStyle-79_1.jpg?v=1633240353",
+      "brandname": "MAYA CHIP",
+      "productName": "Power Fol Eyelash | Eyebrow Treatment",
+      "price": 60,
+      "available": "3 more color",
+      "id": 1
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-GuavaRescueSpray_720x.jpg?v=1629846425",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaRescue-03.jpg?v=1629846315",
+      "brandname": "CEREMONIA",
+      "productName": "Guava Rescue Spray",
+      "price": 40,
+      "available": "2 more color",
+      "id": 2
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ceremoniaguavaleave-inconditioneratcredobeauty_720x.jpg?v=1634588218",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaLeaveIn-04.jpg?v=1629846685",
+      "brandname": "CEREMONIA",
+      "productName": "Guava Leave in Conditioner",
+      "price": 55,
+      "available": "1 more color",
+      "id": 3
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_Aceite-05_x540.jpg?v=1629846661",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Aceite_900x.jpg?v=1629846421",
+      "brandname": "CEREMONIA",
+      "productName": "Aceite de Moska",
+      "price": 50,
+      "available": "2 more color",
+      "id": 4
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineConditioner_x540.jpg?v=1625251516",
+      "brandname": "CAPTAIN BLANKENSHIP",
+      "productName": "Sea Shine Conditioner",
+      "price": 30,
+      "available": "4 more color",
+      "id": 5
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_124_720x.jpg?v=1631811179",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_DROPPER_384.jpg?v=1631811203",
+      "brandname": "MAYA CHIP",
+      "productName": "GOOPGLOW Restore + Shine Hair Serum",
+      "price": 65,
+      "available": "4 more color",
+      "id": 6
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Champu_900x.jpg?v=1629846580",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Copyof210428_Ceremonia_Shot_16_CHAMPU_BOTTLE_0355_FS-V2_x540.jpg?v=1629846388",
+      "brandname": "CEREMONIA",
+      "productName": "Champú de Yucca & Witch Hazel Shampoo",
+      "price": 45,
+      "available": "3 more color",
+      "id": 7
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineShampoo_x540.jpg?v=1625251505",
+      "brandname": "CAPTAIN BLANKENSHIP",
+      "productName": "Sea Shine Shampoo",
+      "price": 55,
+      "available": "5 more color",
+      "id": 8
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Sweet-Spirit-Leave-in-Conditioner-10oz.jpg?v=1604626177",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226184",
+      "brandname": "INNERSENSE ORGANIC BEAUTY",
+      "productName": "Sweet Spirit Leave In Conditioner",
+      "price": 66,
+      "available": "2 more color",
+      "id": 9
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/AsSeenin-2copy_720x.png?v=1634793915",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/TheLaurenStyle-79_1.jpg?v=1633240353",
+      "brandname": "MAYA CHIP",
+      "productName": "Power Fol Eyelash | Eyebrow Treatment",
+      "price": 60,
+      "available": "3 more color",
+      "id": 10
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-GuavaRescueSpray_720x.jpg?v=1629846425",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaRescue-03.jpg?v=1629846315",
+      "brandname": "CEREMONIA",
+      "productName": "Guava Rescue Spray",
+      "price": 40,
+      "available": "2 more color",
+      "id": 11
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ceremoniaguavaleave-inconditioneratcredobeauty_720x.jpg?v=1634588218",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaLeaveIn-04.jpg?v=1629846685",
+      "brandname": "CEREMONIA",
+      "productName": "Guava Leave in Conditioner",
+      "price": 55,
+      "available": "1 more color",
+      "id": 12
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_Aceite-05_x540.jpg?v=1629846661",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Aceite_900x.jpg?v=1629846421",
+      "brandname": "CEREMONIA",
+      "productName": "Aceite de Moska",
+      "price": 50,
+      "available": "2 more color",
+      "id": 13
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineConditioner_x540.jpg?v=1625251516",
+      "brandname": "CAPTAIN BLANKENSHIP",
+      "productName": "Sea Shine Conditioner",
+      "price": 30,
+      "available": "4 more color",
+      "id": 14
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_124_720x.jpg?v=1631811179",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_DROPPER_384.jpg?v=1631811203",
+      "brandname": "MAYA CHIP",
+      "productName": "GOOPGLOW Restore + Shine Hair Serum",
+      "price": 65,
+      "available": "4 more color",
+      "id": 15
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-Champu_900x.jpg?v=1629846580",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Copyof210428_Ceremonia_Shot_16_CHAMPU_BOTTLE_0355_FS-V2_x540.jpg?v=1629846388",
+      "brandname": "CEREMONIA",
+      "productName": "Champú de Yucca & Witch Hazel Shampoo",
+      "price": 45,
+      "available": "3 more color",
+      "id": 16
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineShampoo_x540.jpg?v=1625251505",
+      "brandname": "CAPTAIN BLANKENSHIP",
+      "productName": "Sea Shine Shampoo",
+      "price": 55,
+      "available": "5 more color",
+      "id": 17
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Sweet-Spirit-Leave-in-Conditioner-10oz.jpg?v=1604626177",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226184",
+      "brandname": "INNERSENSE ORGANIC BEAUTY",
+      "productName": "Sweet Spirit Leave In Conditioner",
+      "price": 66,
+      "available": "2 more color",
+      "id": 18
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/seashineconditionerhero_900x.jpg?v=1625251524",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/SeaShineShampoo_x540.jpg?v=1625251505",
+      "brandname": "CAPTAIN BLANKENSHIP",
+      "productName": "Sea Shine Shampoo",
+      "price": 55,
+      "available": "5 more color",
+      "id": 19
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Sweet-Spirit-Leave-in-Conditioner-10oz.jpg?v=1604626177",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Hydrating-Cream-Conditioner-Refill-Pouch-32oz_x540.png?v=1631226184",
+      "brandname": "INNERSENSE ORGANIC BEAUTY",
+      "productName": "Sweet Spirit Leave In Conditioner",
+      "price": 66,
+      "available": "2 more color",
+      "id": 20
+    }
+  ],
+  "cart": [
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_124_720x.jpg?v=1631811179",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/08.02.21_ECOMM_STILLS_BEAUTY_GOOP-HAIR-SERUM_DROPPER_384.jpg?v=1631811203",
+      "brandname": "MAYA CHIP",
+      "productName": "GOOPGLOW Restore + Shine Hair Serum",
+      "price": 65,
+      "available": "4 more color",
+      "id": 6
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/AsSeenin-2copy_720x.png?v=1634793915",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/TheLaurenStyle-79_1.jpg?v=1633240353",
+      "brandname": "MAYA CHIP",
+      "productName": "Power Fol Eyelash | Eyebrow Treatment",
+      "price": 60,
+      "available": "3 more color",
+      "id": 10
+    },
+    {
+      "image_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/ProductHeroImage-GuavaRescueSpray_720x.jpg?v=1629846425",
+      "image2_url": "https://cdn.shopify.com/s/files/1/0637/6147/products/Credo_GuavaRescue-03.jpg?v=1629846315",
+      "brandname": "CEREMONIA",
+      "productName": "Guava Rescue Spray",
+      "price": 40,
+      "available": "2 more color",
+      "id": 2
+    }
+  ]
+}
