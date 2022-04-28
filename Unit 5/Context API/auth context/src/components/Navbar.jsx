@@ -24,7 +24,7 @@ const Navbar = () => {
           }
         }}
       >
-        {login === "" ? "Login" : "Signup"}
+        {login === "" ? "Login" : "Logout"}
       </button>
     </nav>
   );
