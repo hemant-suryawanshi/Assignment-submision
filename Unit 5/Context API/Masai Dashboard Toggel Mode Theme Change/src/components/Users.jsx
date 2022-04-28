@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { ThemeContext } from "../context/ThemeContext";
 import { Link } from "react-router-dom";
 
-const ActiveUser = styled.div`
+const Timepassdetails= styled.div`
 position: absolute;
 left: 8.54%;
 right: 60.07%;
@@ -21,7 +21,7 @@ background-color: ${props => props.theme=="Dark" ? " #292E33" : "white"};
 const User = () => {
    
     return (   
-      <ActiveUser  className="Home">      
+      <Timepassdetails  className="Home">      
     
         <div style={{display:"flex",margin:"15px"}}>  
        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Yogesh_52e31f5560.jpg" alt="" style={{marginLeft:"30px" ,width:"50px",borderRadius:"25px"}} />     
@@ -53,7 +53,7 @@ const User = () => {
        <p style={{marginLeft:"30px"}} >Swanand Kadam</p>
           </div>
           
-      </ActiveUser>   
+      </Timepassdetails>   
     )             
      }
   export default User;
