@@ -1,0 +1,27 @@
+#carddiv {
+  display: flex;
+  width: 35%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: #FEFBE7;
+}
+#imgdiv {
+  width: 35%;
+  height: 90%;
+  padding: 2%;
+}
+#imgdiv > img {
+  border-radius: 50%;
+  height: 100%;
+}
+#textdiv {
+  text-align: left;
+  margin-left: 15px;
+  width: 65%;
+  height: 100%;
+}
+#carddiv:hover{
+ cursor: pointer;;
+}
