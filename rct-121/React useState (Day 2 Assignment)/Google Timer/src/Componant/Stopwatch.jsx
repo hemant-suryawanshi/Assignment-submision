@@ -4,17 +4,17 @@ const Stopwatch = () => {
   const [time, setTime] = useState(0);
   const [timeron, setTimeron] = useState(false);
   useEffect(() => {
-    let interval = null;
+    let id = null;
     if (timeron) {
-      interval = setInterval(() => {
+      id = setInterval(() => {
         setTime((prev) => prev + 10);
       }, 10);
     } else {
-      clearInterval(interval);
+      clearInterval(id);
     }
 
     return () => {
-      clearInterval(interval);
+      clearInterval(id);
     };
   }, [timeron]);
 

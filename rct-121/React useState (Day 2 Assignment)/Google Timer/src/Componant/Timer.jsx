@@ -6,22 +6,22 @@ const Timer = () => {
   const [sec, setSec] = useState(0);
   const [minut, setMinut] = useState(0);
   useEffect(() => {
-    let interval = null;
+    let id = null;
     if (timeron) {
-      interval = setInterval(() => {
+      id = setInterval(() => {
         setTime((prev) => {
           if (prev == 10) {
-            clearInterval(interval);
+            clearInterval(id);
           }
           return prev - 10;
         });
       }, 10);
     } else {
-      clearInterval(interval);
+      clearInterval(id);
     }
 
     return () => {
-      clearInterval(interval);
+      clearInterval(id);
     };
   }, [timeron]);
 
