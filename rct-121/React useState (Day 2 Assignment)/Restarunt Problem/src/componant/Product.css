@@ -1,0 +1,32 @@
+#productpage{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 50px;
+    width: 100%;
+   justify-content: center;
+   margin-top: 50px;
+}
+#productCard{
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    height: 200px;
+}
+#imgDiv{
+    width: 40%;
+}
+#imgDiv>img{
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+
+}
+
+#textDiv{
+    width: 60%;
+    line-height: 0.1;
+}
+#colinetext{
+    display: flex;
+    justify-content: space-between;
+}
