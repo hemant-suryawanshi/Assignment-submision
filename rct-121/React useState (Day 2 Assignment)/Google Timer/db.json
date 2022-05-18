@@ -1,0 +1,36 @@
+{
+  "user": [
+    {
+      "name": "Hemant",
+      "id": "23"
+    },
+    {
+      "name": "Akshay",
+      "id": "22"
+    },
+    {
+      "name": "Vishal",
+      "id": "24"
+    },
+    {
+      "0": {
+        "username": "",
+        "age": "",
+        "email": ""
+      },
+      "username": "hemant",
+      "age": "3762",
+      "id": "wPc7CU-"
+    },
+    {
+      "0": {
+        "username": "",
+        "age": "",
+        "email": ""
+      },
+      "username": "pushpa",
+      "age": "55",
+      "id": "WUUsvxG"
+    }
+  ]
+}
